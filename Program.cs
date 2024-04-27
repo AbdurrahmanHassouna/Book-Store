@@ -39,12 +39,13 @@ namespace AprilBookStore
             builder.Services.AddTransient<IData, DataContext>();
             builder.Services.AddTransient<IAuthorizationHandler, CanEditOnlyOthersRolesHandler>();
             builder.Services.AddTransient<IAuthorizationHandler, SuperAdminHandler>();
-
+            var ClientId = builder.Configuration["ClientId"];
+            var ClientSecret = builder.Configuration["ClientSecret"];
             builder.Services.AddAuthentication()
                 .AddGoogle(options =>
                 {
-                    options.ClientId="435389422678-rr32mr9ghe5f72rfgmp5eako1uql2chv.apps.googleusercontent.com";
-                    options.ClientSecret="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";
+                    options.ClientId=ClientId;
+                    options.ClientSecret=ClientSecret;
                 });
             builder.Services.AddAuthorization(options=> {
                 options.AddPolicy("DeleteRolePolicy", p => p.RequireRole("SuperAdmin"));

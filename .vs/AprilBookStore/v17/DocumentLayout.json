@@ -1,65 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Book-Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abdo\\AppData\\Roaming\\Microsoft\\UserSecrets\\5e15fd2f-fa40-45f8-9834-052ecc54ccb0\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\viewmodels\\createbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\viewmodels\\createbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:viewmodels\\createbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\home\\_book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\home\\_book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\home\\_book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\dataaccess\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\dataaccess\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:dataaccess\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\dataaccess\\idata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\dataaccess\\idata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:dataaccess\\idata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|c:\\users\\abdo\\source\\repos\\booksoreapril\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,195 +93,218 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Books\\Edit.cshtml",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAqwGMAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:47:49.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Details.cshtml",
-              "RelativeToolTip": "Views\\Books\\Details.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEAAAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:47:26.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Books\\Delete.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAqwE8AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:47:20.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Create.cshtml",
-              "RelativeToolTip": "Views\\Books\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:47:06.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateBookViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\ViewModels\\CreateBookViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CreateBookViewModel.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\ViewModels\\CreateBookViewModel.cs",
-              "RelativeToolTip": "ViewModels\\CreateBookViewModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:24:22.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\DataAccess\\DataContext.cs",
-              "RelativeDocumentMoniker": "DataAccess\\DataContext.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\DataAccess\\DataContext.cs",
-              "RelativeToolTip": "DataAccess\\DataContext.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAA3wKQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:14:41.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IData.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\DataAccess\\IData.cs",
-              "RelativeDocumentMoniker": "DataAccess\\IData.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\DataAccess\\IData.cs",
-              "RelativeToolTip": "DataAccess\\IData.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAIwBsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:14:17.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Book.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Home\\_Book.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\_Book.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Home\\_Book.cshtml",
-              "RelativeToolTip": "Views\\Home\\_Book.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAABkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:10:51.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T17:10:48.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Views\\Books\\Index.cshtml",
-              "RelativeToolTip": "Views\\Books\\Index.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAwwFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T16:59:52.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\CartItem.cs",
-              "RelativeToolTip": "Models\\CartItem.cs",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\GitHub\\Book-Store\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:00:27.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA7wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:00:26.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "Models\\Author.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Models\\Author.cs",
-              "RelativeToolTip": "Models\\Author.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:00:23.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T17:00:18.036Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T20:19:34.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Abdo\\AppData\\Roaming\\Microsoft\\UserSecrets\\5e15fd2f-fa40-45f8-9834-052ecc54ccb0\\secrets.json",
+              "ToolTip": "C:\\Users\\Abdo\\AppData\\Roaming\\Microsoft\\UserSecrets\\5e15fd2f-fa40-45f8-9834-052ecc54ccb0\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T20:19:09.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAswC0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T20:15:40.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Edit.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Books\\Edit.cshtml",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAqwGMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:47:49.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Details.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "Views\\Books\\Details.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEAAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:47:26.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Books\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Delete.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Books\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Books\\Delete.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAqwE8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:47:20.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Create.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "Views\\Books\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:47:06.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateBookViewModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\ViewModels\\CreateBookViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateBookViewModel.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\ViewModels\\CreateBookViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateBookViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:24:22.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DataContext.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
+              "RelativeToolTip": "DataAccess\\DataContext.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAA3wKQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:14:41.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IData.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
+              "RelativeDocumentMoniker": "DataAccess\\IData.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
+              "RelativeToolTip": "DataAccess\\IData.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwBsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:14:17.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Book.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Home\\_Book.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_Book.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Home\\_Book.cshtml",
+              "RelativeToolTip": "Views\\Home\\_Book.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:10:51.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T17:10:48.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Views\\Books\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAwwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T16:59:52.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:00:27.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:00:26.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Models\\Author.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Models\\Author.cs",
+              "RelativeToolTip": "Models\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:00:23.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:00:18.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Controllers\\BooksController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
               "RelativeToolTip": "Controllers\\BooksController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAA1wB4AAAA/AAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvx4AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:56:35.125Z",
               "EditorCaption": ""

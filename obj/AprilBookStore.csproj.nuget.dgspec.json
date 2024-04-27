@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\AprilBookStore.csproj": {}
+    "D:\\GitHub\\Book-Store\\AprilBookStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\AprilBookStore.csproj": {
+    "D:\\GitHub\\Book-Store\\AprilBookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\AprilBookStore.csproj",
+        "projectUniqueName": "D:\\GitHub\\Book-Store\\AprilBookStore.csproj",
         "projectName": "AprilBookStore",
-        "projectPath": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\AprilBookStore.csproj",
+        "projectPath": "D:\\GitHub\\Book-Store\\AprilBookStore.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\obj\\",
+        "outputPath": "D:\\GitHub\\Book-Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Abdo\\AppData\\Roaming\\NuGet\\NuGet.Config",

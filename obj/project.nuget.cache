@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OtrvVPU8uKNYx12m5v8HoQRod3dLFOc+GIOkK6MlBTn1vAh7at6QhQFVFxsxyjTjFRseKxGouL76xK2XW4sF4A==",
+  "dgSpecHash": "wHYHerrDgJyrGYdQyYDMaXaRGqMqmpKTE6FP5NUFYw4K6ufq8x53knn5rwUVT3k1nyAYXpaeV3e9O8gBUqpSwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abdo\\source\\repos\\BookSoreApril\\AprilBookStore.csproj",
+  "projectFilePath": "D:\\GitHub\\Book-Store\\AprilBookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdo\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Abdo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
