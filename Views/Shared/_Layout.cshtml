@@ -1,0 +1,189 @@
+﻿@using AprilBookStore.DataAccess
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.AspNetCore.Mvc.ViewEngines
+@inject SignInManager<ApplicationUser> signInManager
+@inject IData data
+@inject IWebHostEnvironment Environment
+@inject ICompositeViewEngine Engine
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AprilBookStore</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/Identity/lib/bootstrap/dist/css/bootstrap.css" />
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+              integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"
+              asp-fallback-href="~/Identity/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/Identity/css/site.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid pe-5 ps-5">
+                <a class="navbar-brand" href="~/">AprilBookStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">@Html.ActionLink("Books", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Authors", "Index", "Authors", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Categories", "Index", "Categories", new { area = "" }, new { @class = "nav-link" })</li>
+
+                        @if (User.IsInRole("SuperAdmin")|| User.IsInRole("Admin"))
+                        {
+
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                                    <li>@Html.ActionLink("Add Book", "Create", "Books", null, new { @class = "dropdown-item" })</li>
+                                    <li>@Html.ActionLink("Orders", "Index", "Orders", null, new { @class = "dropdown-item" }) </li>
+                                    <li>@Html.ActionLink("Manage Books", "Index", "Books", null, new { @class = "dropdown-item" })</li>
+                                </ul>
+                            </li>
+                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Administration
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                                    <li >
+                                        <a class="dropdown-item" asp-action="ListUsers" asp-controller="Administration">Users</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-action="ListRoles" asp-controller="Administration">Roles</a>
+                                    </li>
+                                    @*  <li class="dropdown-item">
+                                <a class="nav-link" asp-action="CreateRole" asp-controller="Administration">Create</a>
+                                </li> *@
+                                </ul>
+                            </li>
+                            
+                        }
+
+                    </ul>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        @{
+                            var result = Engine.FindView(ViewContext, "_LoginPartial", isMainPage: false);
+                        }
+                        @if (result.Success)
+                        {
+                            await Html.RenderPartialAsync("_LoginPartial");
+                        }
+                        else
+                        {
+                            throw new InvalidOperationException("The default Identity UI layout requires a partial view '_LoginPartial' " +
+                            "usually located at '/Pages/_LoginPartial' or at '/Views/Shared/_LoginPartial' to work. Based on your configuration " +
+                            $"we have looked at it in the following locations: {System.Environment.NewLine}{string.Join(System.Environment.NewLine, result.SearchedLocations)}.");
+                        }
+                    </div>
+                    @if (!User.IsInRole("Admin"))
+                    {
+
+                        using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "d-flex me-5 form-inline" }))
+                        {
+                            @Html.TextBox("Search", null, new { id = "SearchHome", placeholder = "Search", @class = "input-group ps-2 rounded " })
+                            ;
+                            <input class="btn  btn-outline-dark" type="submit" value="Search" style="background-color: aquamarine" />
+
+                        }
+
+                        <script type="text/javascript">
+                            $(function () {
+                                $("#SearchHome").autocomplete({
+                                    source: '@Url.Action("AutoComplete", "Home")'
+                                })
+                            });
+                        </script>
+
+
+
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("Index", "Books", FormMethod.Post, new { @class = "d-flex me-5 form-inline" }))
+                        {
+                            @Html.TextBox("Search", null, new { id = "SearchAdmin", placeholder = "Search", @class = "input-group ps-2 rounded" })
+                            ;
+                            <input class="btn  btn-outline-dark" type="submit" value="Search" style="background-color: aquamarine" />
+
+
+                        }
+                        <script type="text/javascript">
+                            $(function () {
+                                $("#SearchAdmin").autocomplete({
+                                    source: '@Url.Action("AutoComplete", "Books")'
+                                })
+                            });
+                        </script>
+                    }
+                    @if (!((ViewContext.RouteData.Values["controller"]?.ToString() == "Cart") || (ViewContext.RouteData.Values["controller"]?.ToString() == "Orders")|| !User.Identity.IsAuthenticated))
+                    {
+
+                        <a class="nav-item nav-link ml-3" href="~/Cart/Index" style="position: relative;">
+                            <img src="~/Assets/icons8-cart-50.png" class="rounded" alt="Cart Icon" style="width: 40px; height: 40px;background-color:aquamarine" />
+
+                            <span id="cartItemCount" class="badge badge-pill badge-danger" style="position:absolute; top: 5px; right: 37px;">@await Html.PartialAsync("_CartCount",await data.GetCartItemsCountAsync(User))</span>
+                        </a>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid p-5">
+        <partial name="_CookieConsentPartial" optional />
+        <main role="main" class=" mb-auto h-auto">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer border-top pl-3 text-muted">
+        <div class="container-fluid ps-5">
+            &copy; 2024 - AprilBookStore
+            @{
+                var foundPrivacy = Url.Page("/Privacy", new { area = "" });
+            }
+            @if (foundPrivacy != null)
+            {
+                <a asp-area="" asp-page="/Privacy">Privacy</a>
+            }
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/Identity/lib/jquery/dist/jquery.js"></script>
+        <script src="~/Identity/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/Identity/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+                asp-fallback-src="~/Identity/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj">
+        </script>
+        <script src="~/Identity/js/site.js" asp-append-version="true"></script>
+    </environment>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

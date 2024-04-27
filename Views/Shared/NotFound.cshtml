@@ -1,0 +1,15 @@
+﻿@{
+    if (ViewBag.ErrorMessage==null)
+    {
+        <h1>no error details</h1>
+        <h1>@ViewBag.StatusCode</h1>
+    }
+    else
+    {
+        <h1>@ViewBag.ErrorMessage</h1>
+        <h1>@ViewBag.StatusCode</h1>
+
+    }
+}
+
+
