@@ -9,7 +9,8 @@ using X.PagedList;
 
 
 namespace AprilBookStore.Controllers
-{
+{ 
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class BooksController : Controller
     {
         private IData data;
@@ -19,14 +20,16 @@ namespace AprilBookStore.Controllers
             this.data = data;
             this.env = hostEnvironment;
         }
-
-        public JsonResult AutoComplete(string term)
+        [AcceptVerbs("GET", "POST")]
+        [AllowAnonymous]
+        public IActionResult AutoComplete(string term)  
         {
            var result = data.SearchBook(term).Select(b=>b.Name).ToList();
            return Json(result);
         }
-        // GET: Books
-        public JsonResult Name(string Name)
+        [AcceptVerbs("GET", "POST")]
+        [AllowAnonymous]
+        public IActionResult Name(string Name)
         {
             if(data.SearchBook(Name).Any(b => b.Name==Name)) { 
             return Json(false);
@@ -63,7 +66,7 @@ namespace AprilBookStore.Controllers
 
         // GET: Books/Create
 
-        [Authorize(Roles = "Admin")]
+       
         public ActionResult Create()
         {
             ViewBag.AuthorId = new SelectList(data.GetAuthors(), "Id", "Name");
@@ -92,9 +95,10 @@ namespace AprilBookStore.Controllers
                 if (book.BookCoverFile != null && book.BookCoverFile.Length > 0)
                 {
                     string uniquefileName = Guid.NewGuid().ToString()+"_"+book.BookCoverFile.FileName;
-                    string filePath = Path.Combine(env.ContentRootPath+"\\book-covers\\UploadedCovers", uniquefileName);
-                    book.BookCoverFile.CopyTo(new FileStream(env.ContentRootPath+"\\book-covers\\UploadedCovers", FileMode.Create));
-                    newbook.ImgPath = filePath;
+                    string imagePath = Path.Combine("/book-covers/UploadedCovers", uniquefileName);
+                    string filePath = Path.Combine(env.ContentRootPath+"\\wwwroot\\book-covers\\UploadedCovers", uniquefileName);
+                    book.BookCoverFile.CopyTo(new FileStream(filePath, FileMode.Create));
+                    newbook.ImgPath = imagePath;
                 }
                 newbook.IsDeleted=false;
                 newbook.IsVisible=true;

@@ -17,6 +17,9 @@
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="~/css/site.css" rel="stylesheet" />
+        <script src="~/lib/jquery-ui-1.13.3.custom/jquery-ui.min.js"></script>
+        <link href="~/lib/jquery-ui-1.13.3.custom/jquery-ui.min.css" rel="stylesheet" />
+        <link href="~/lib/jquery-ui-1.13.3.custom/jquery-ui.theme.min.css" rel="stylesheet" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -90,7 +93,7 @@
                             $"we have looked at it in the following locations: {System.Environment.NewLine}{string.Join(System.Environment.NewLine, result.SearchedLocations)}.");
                         }
                     </div>
-                    @if (!User.IsInRole("Admin"))
+                    @if (!(User.IsInRole("SuperAdmin")||User.IsInRole("Admin")))
                     {
 
                         using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "d-flex me-5 form-inline" }))
@@ -116,7 +119,7 @@
                     {
                         using (Html.BeginForm("Index", "Books", FormMethod.Post, new { @class = "d-flex me-5 form-inline" }))
                         {
-                            @Html.TextBox("Search", null, new { id = "SearchAdmin", placeholder = "Search", @class = "input-group ps-2 rounded" })
+                            @Html.TextBox("Search", null, new { id = "SearchAdmin", placeholder = "Search", @class = "input-group ps-2 rounded"  ,autocomplete = "on" })
                             ;
                             <input class="btn  btn-outline-dark" type="submit" value="Search" style="background-color: aquamarine" />
 
@@ -124,8 +127,11 @@
                         }
                         <script type="text/javascript">
                             $(function () {
+                                
                                 $("#SearchAdmin").autocomplete({
+                                    
                                     source: '@Url.Action("AutoComplete", "Books")'
+                                    
                                 })
                             });
                         </script>
