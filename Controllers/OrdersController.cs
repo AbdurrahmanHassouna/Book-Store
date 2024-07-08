@@ -20,7 +20,7 @@ namespace AprilBookStore.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var orders = await data.GetOrders();
+            var orders = await data.GetOrders(User);
             return View(orders);
         }
         public async Task<IActionResult> Details(int Id)

@@ -18,10 +18,10 @@ namespace AprilBookStore.Controllers
             return View(books.ToPagedList(page ?? 1, 25));
         }
         [HttpPost]
-        public ActionResult Index(int? page, string Search)
+        public async Task<ActionResult> Index(int? page, string Search)
         {
             List<Book> books;
-            books = data.SearchBook(Search).Where(b => b.IsVisible==true && b.IsDeleted==false).ToList();
+            books = (await data.SearchBook(Search)).Where(b => b.IsVisible==true && b.IsDeleted==false).ToList();
 
             return View(books.ToPagedList(page ?? 1, 25));
         }

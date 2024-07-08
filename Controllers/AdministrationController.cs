@@ -60,8 +60,6 @@ public class AdministrationController : Controller
     {
         try
         {
-            // ... your existing code ...
-
             var role = roleManager.FindByIdAsync(id).Result;
 
             if (role == null)
@@ -85,11 +83,8 @@ public class AdministrationController : Controller
             return View(model);
         }
         catch (Exception ex)
-        {
-            // Log the exception:
+        { 
             Console.WriteLine(ex.ToString());
-
-            // Consider returning a more informative error view
             ViewBag.ErrorMessage = "An error occurred. Please contact support.";
             return View("Error");
         }
@@ -328,7 +323,7 @@ public class AdministrationController : Controller
         try
         {
             ViewBag.userId = id;
-            // ... your existing code ...
+            
 
             var user = userManager.FindByIdAsync(id).Result;
 
@@ -352,10 +347,7 @@ public class AdministrationController : Controller
         }
         catch (Exception ex)
         {
-            // Log the exception:
             Console.WriteLine(ex.ToString());
-
-            // Consider returning a more informative error view
             ViewBag.ErrorMessage = "An error occurred. Please contact support.";
             return View("Error");
         }

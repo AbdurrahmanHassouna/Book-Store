@@ -40,14 +40,21 @@ namespace AprilBookStore.DataAccess
             
             return GetBooks().Where(c=>c.Id==id).FirstOrDefault();
         }
-        public ICollection<Book> SearchBook(string search)
+        public async Task<ICollection<Book>> SearchBook(string search)
         {
-            var books = bookStoreContext.Books.Include(a => a.Author).Include(a => a.Category)
-                .Where(b => b.Name.StartsWith(search)).ToList();
-            books.AddRange(bookStoreContext.Books.Include(a => a.Author).Include(a => a.Category)
-                .Where(b => b.Name.Contains(search) && !b.Name.StartsWith(search)));
-            return books;
+            if (string.IsNullOrEmpty(search))
+            {
+                return new List<Book>();
+            }
+            var searchTerm = search.Trim(); 
+
+            return await bookStoreContext.Books
+                .Include(a => a.Author)
+                .Include(a => a.Category)
+                .Where(b => EF.Functions.Like(b.Name, $"%{searchTerm}%")) 
+                .ToListAsync();
         }
+
         public async Task<int> GetCartItemsCountAsync(ClaimsPrincipal claims)
         {
             var user = await userManager.GetUserAsync(claims);
@@ -104,19 +111,14 @@ namespace AprilBookStore.DataAccess
             bookStoreContext.Update(cartItem);
             return await bookStoreContext.SaveChangesAsync();
         }
-        public async Task<ICollection<Order>> GetOrders()
+        public async Task<ICollection<Order>> GetOrders(ClaimsPrincipal claims)
         {
-            var user = await userManager.FindByEmailAsync(signInManager.Context.User.FindFirstValue(ClaimTypes.Email));
-            var Orders = bookStoreContext.Orders.Where(o => o.UserId==user.Id).ToList();
+            var Orders = bookStoreContext.Orders.Where(o => o.UserId==claims.FindFirstValue(ClaimTypes.NameIdentifier)).ToList();
             return Orders;
         }
         public async Task<Order> GetOrderDetails(int orderId)
         {
-
-            ICollection<OrderItem> orderItems = bookStoreContext.OrderItems.Where(o => o.OrderId==orderId).ToList();
-            Order order = (await bookStoreContext.Orders.FindAsync(orderId));
-            order.OrderItems = orderItems;
-
+            Order order = await bookStoreContext.Orders.Where(o=>o.OrderID==orderId).Include(o=>o.OrderItems).FirstOrDefaultAsync();
             return order;
         }
         public async Task<Order>? SubmitOrder(string UserId)

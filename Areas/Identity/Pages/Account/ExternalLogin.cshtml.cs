@@ -125,7 +125,26 @@ namespace AprilBookStore.Areas.Identity.Pages.Account
             }
             else
             {
-                // If the user does not have an account, then ask the user to create an account.
+                var user = await _userManager.FindByEmailAsync(info.Principal.FindFirstValue(ClaimTypes.Email));
+                if(user is not null)
+                {
+                    var CreateLoginResult = await _userManager.AddLoginAsync(user, info);
+                    if (CreateLoginResult.Succeeded)
+                    {
+                        _logger.LogInformation("User created an account using {Name} provider.", info.LoginProvider);
+
+                        var userId = await _userManager.GetUserIdAsync(user);
+
+                        var confirmEmailResult =await _userManager.ConfirmEmailAsync(user,await _userManager.GenerateEmailConfirmationTokenAsync(user));
+                        if(confirmEmailResult.Succeeded)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false, info.LoginProvider);
+                            return LocalRedirect(returnUrl);
+                        }
+                        ErrorMessage = "Error loading external login information.";
+                        return RedirectToPage("./Login");
+                    }
+                }
                 ReturnUrl = returnUrl;
                 ProviderDisplayName = info.ProviderDisplayName;
                 if (info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
@@ -152,6 +171,11 @@ namespace AprilBookStore.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
+                if((await _emailStore.FindByEmailAsync(Input.Email.Normalize(),CancellationToken.None)) is not null)
+                {
+                    ErrorMessage = "The Email is already used";
+                    return RedirectToPage("./Login",new {ReturnUrl = returnUrl });
+                }
                 var user = CreateUser();
 
                 var UserName = info.Principal.FindFirstValue(ClaimTypes.Email).Split('@')[0];

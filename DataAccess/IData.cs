@@ -16,13 +16,13 @@ namespace AprilBookStore.DataAccess
         Author GetAuthor(int id);
         ICollection<Category> GetCategories();
         Category GetCategory(int id);
-        ICollection<Book> SearchBook(string search);
+        Task<ICollection<Book>> SearchBook(string search);
         Task<int> GetCartItemsCountAsync(ClaimsPrincipal claims);
         Task<ICollection<CartItem>> GetCartItemsAsync();
         Task<int> AddToCart(Book book);
         Task<int> DeleteCartItem(CartItem cartItem);
         Task<int> UpdateCartItem(CartItem cartItem);
-        Task<ICollection<Order>> GetOrders();
+        Task<ICollection<Order>> GetOrders(ClaimsPrincipal claims);
         Task<Order> GetOrderDetails(int orderId);
         Task<Order> SubmitOrder(string userId);
         void AddBook(Book book);

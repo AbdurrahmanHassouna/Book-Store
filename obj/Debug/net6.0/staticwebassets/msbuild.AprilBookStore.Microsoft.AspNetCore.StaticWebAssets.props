@@ -47440,6 +47440,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\Science-Geography\Science-Geography.csv))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\UploadedCovers\1e47fe98-bd1c-409d-8dc8-fec29fdf96f5_unnamed.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AprilBookStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AprilBookStore</BasePath>
+      <RelativePath>book-covers/UploadedCovers/1e47fe98-bd1c-409d-8dc8-fec29fdf96f5_unnamed.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\UploadedCovers\1e47fe98-bd1c-409d-8dc8-fec29fdf96f5_unnamed.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\UploadedCovers\8ea1d423-0c62-47e0-92db-1c54242ace76_unnamed.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AprilBookStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AprilBookStore</BasePath>
+      <RelativePath>book-covers/UploadedCovers/8ea1d423-0c62-47e0-92db-1c54242ace76_unnamed.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\UploadedCovers\8ea1d423-0c62-47e0-92db-1c54242ace76_unnamed.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\book-covers\UploadedCovers\dacb8896-a56d-40ab-9b66-52cf74d83289_unnamed.png))">
       <SourceType>Package</SourceType>
       <SourceId>AprilBookStore</SourceId>

@@ -22,16 +22,16 @@ namespace AprilBookStore.Controllers
         }
         [AcceptVerbs("GET", "POST")]
         [AllowAnonymous]
-        public IActionResult AutoComplete(string term)  
+        public async Task<IActionResult> AutoComplete(string term)  
         {
-           var result = data.SearchBook(term).Select(b=>b.Name).ToList();
+            var result = await data.SearchBook(term);
            return Json(result);
         }
         [AcceptVerbs("GET", "POST")]
         [AllowAnonymous]
-        public IActionResult Name(string Name)
+        public async Task<IActionResult> Name(string Name)
         {
-            if(data.SearchBook(Name).Any(b => b.Name==Name)) { 
+            if((await data.SearchBook(Name)).Any(b => b.Name==Name)) { 
             return Json(false);
             }
             return Json(true);
@@ -42,17 +42,15 @@ namespace AprilBookStore.Controllers
             return View(books.ToPagedList(page ?? 1, 25));
         }
         [HttpPost]
-        public ActionResult Index(int? page, string Search)
+        public async Task<ActionResult> Index(int? page, string Search)
         {
             List<Book> books;
-            books = data.SearchBook(Search).ToList();
+            books = (await data.SearchBook(Search)).ToList();
             
             return View(books.ToPagedList(page ?? 1, 25));
         }
 
-
         // GET: Books/Details/5
-
         public ActionResult Details(int id)
         {
             
@@ -63,10 +61,7 @@ namespace AprilBookStore.Controllers
             }
             return View(book);
         }
-
         // GET: Books/Create
-
-       
         public ActionResult Create()
         {
             ViewBag.AuthorId = new SelectList(data.GetAuthors(), "Id", "Name");
