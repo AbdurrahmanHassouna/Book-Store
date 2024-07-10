@@ -30,8 +30,8 @@ namespace AprilBookStore
             builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options => {
                 options.SignIn.RequireConfirmedAccount = true;
                 options.Password.RequireNonAlphanumeric=false;
-                
-             }).AddDefaultUI()
+                options.User.RequireUniqueEmail = true;
+            }).AddDefaultUI()
                 .AddEntityFrameworkStores<BookStoreContext>()
                 .AddDefaultTokenProviders();
             

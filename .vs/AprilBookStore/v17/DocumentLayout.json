@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\GitHub\\Book-Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\dataaccess\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:dataaccess\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\dataaccess\\idata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,50 +35,23 @@
       "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\home\\_book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\home\\_book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./BookStore/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./BookStore/True/SqlTable/dbo.AspNetUserLogins.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|d:\\github\\book-store\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13581C96-C84D-4683-B324-A6544B5FD981}|AprilBookStore.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -76,47 +61,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBYAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:59:18.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAhwJAAAADZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T17:43:58.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IData.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
-              "RelativeDocumentMoniker": "DataAccess\\IData.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
-              "RelativeToolTip": "DataAccess\\IData.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAIwBIAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:30:17.127Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -135,179 +81,164 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:22:16.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
-              "RelativeDocumentMoniker": "DataAccess\\DataContext.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
-              "RelativeToolTip": "DataAccess\\DataContext.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:22:16.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "Controllers\\BooksController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAiwCwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:22:16.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\AuthorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthorController.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\AuthorController.cs",
-              "RelativeToolTip": "Controllers\\AuthorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "IData.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
+              "RelativeDocumentMoniker": "DataAccess\\IData.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\IData.cs",
+              "RelativeToolTip": "DataAccess\\IData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:30:08.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T17:27:33.167Z",
+              "WhenOpened": "2024-07-10T15:23:37.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "_Book.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Home\\_Book.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\_Book.cshtml",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Home\\_Book.cshtml",
-              "RelativeToolTip": "Views\\Home\\_Book.cshtml",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAAAHsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T17:27:30.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdministrationController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\AdministrationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdministrationController.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\AdministrationController.cs",
-              "RelativeToolTip": "Controllers\\AdministrationController.cs",
-              "ViewState": "AQIAAMsAAAAAAAAAAAAIwPMAAAAFAAAA",
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:07:04.593Z",
+              "WhenOpened": "2024-07-10T15:23:05.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.AspNetUserLogins [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./BookStore/True/SqlTable/dbo.AspNetUserLogins.sql",
-              "ToolTip": "dbo.AspNetUserLogins [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-08T17:05:57.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./BookStore/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-08T17:05:52.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ExternalLogin.cshtml.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAUwH4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:39:29.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T16:38:39.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ExternalLogins.cshtml.cs",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAEIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:20:50.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ExternalLogins.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T16:20:48.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAiwJMAAAAJAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:19:41.138Z",
+              "WhenOpened": "2024-07-10T14:59:53.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T14:58:23.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/./BookStore/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-09T20:11:54.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAkwH4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T20:04:53.82Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\GitHub\\Book-Store\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T20:00:27.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T20:00:24.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T19:53:00.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExternalLogins.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:52:09.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DataContext.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\DataAccess\\DataContext.cs",
+              "RelativeToolTip": "DataAccess\\DataContext.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T17:52:36.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T17:51:34.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Book-Store\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\GitHub\\Book-Store\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T17:50:56.408Z"
             }
           ]
         }
