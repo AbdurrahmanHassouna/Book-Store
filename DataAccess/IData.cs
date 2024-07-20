@@ -16,6 +16,9 @@ namespace AprilBookStore.DataAccess
         Author GetAuthor(int id);
         ICollection<Category> GetCategories();
         Category GetCategory(int id);
+        void AddCategory(Category category);
+        void UpdateCategory(Category category);
+        void DeleteCategory(int id);
         Task<ICollection<Book>> SearchBook(string search);
         Task<int> GetCartItemsCountAsync(ClaimsPrincipal claims);
         Task<ICollection<CartItem>> GetCartItemsAsync();
@@ -26,6 +29,9 @@ namespace AprilBookStore.DataAccess
         Task<Order> GetOrderDetails(int orderId);
         Task<Order> SubmitOrder(string userId);
         void AddBook(Book book);
+        void UpdateBook(Book book);
+        void DeleteBook(int id);
+        void Dispose();
 
     }
 }

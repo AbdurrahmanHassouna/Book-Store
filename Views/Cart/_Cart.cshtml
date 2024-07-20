@@ -1,135 +1,128 @@
 ﻿@model IList<CartItem>
 
-@if (Model.Count!=0)
-{
-    <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">Book Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Quantity</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (int i = 0; i < Model.Count; i++)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => modelItem[i].Book.Name)
-                    </td>
-                    <td>
-                        @if (Model[i].Book.QuantityInStock<=0)
+<div class="container my-5">
+    @if (Model.Count != 0)
+    {
+        <h2 class="mb-4">Your Shopping Cart</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        @foreach (var item in Model)
                         {
-                            <h3>out of stock</h3>
-                        }
-                        else
-                        {
-                            <div>( $@Model[i].Book.Price x @Model[i].Quantity )   ==>   @Html.DisplayFor(modelItem => modelItem[i].Price)</div>
-                        }
-                    </td>
-                    <td id="target">
-                        @if (Model[i].Book.QuantityInStock<=0)
-                        {
-                            <h3>out of stock</h3>
-                            <input data-val="true" data-val-required="The BookId field is required." id="BookId" name="bookId" type="hidden" value="@Model[i].BookId" />
-                        }
-                        else
-                        {
-                            <input data-val="true" data-val-required="The BookId field is required." id="BookId" name="bookId" type="hidden" value="@Model[i].BookId" />
-                            <div class="dropdown-container">
-                                <div class="dropdown-toggle">
-
-                                    @Html.DropDownList("Quantity", new SelectList(Enumerable.Range(1, Model[i].Book.QuantityInStock), Model[i].Quantity), new
-                                        {
-                                            @class = "form-control dropdown"
-                                        })
-                                    <div class="slide-content">
-                                    </div>
+                            <div class="row mb-4 align-items-center">
+                                <div class="col-md-3 col-4">
+                                    <img asp-append-version="true" src="@item.Book.ImgPath" class="img-fluid rounded shadow" alt="@item.Book.Name" />
+                                </div>
+                                <div class="col-md-9 col-8">
+                                    <h5 class="mb-2">@item.Book.Name</h5>
+                                    @if (item.Book.QuantityInStock <= 0)
+                                    {
+                                        <span class="badge bg-danger">Out of stock</span>
+                                    }
+                                    else
+                                    {
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="mb-0">Price: $@item.Book.Price</p>
+                                                <p class="mb-0">Subtotal: $@item.Price</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <select asp-for="@item.Quantity"
+                                                        asp-items="@(new SelectList(Enumerable.Range(1, item.Book.QuantityInStock), item.Quantity))"
+                                                        class="form-select me-2 quantity-select"
+                                                        style="width: auto;"
+                                                        data-book-id="@item.BookId">
+                                                </select>
+                                                <button class="btn btn-outline-danger btn-sm delete-cart-item" data-book-id="@item.BookId">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    }
                                 </div>
                             </div>
+                            @if (!Model.Last().Equals(item))
+                            {
+                                <hr>
+                            }
                         }
-                    </td>
-                    <td>
-                        <button class="DeleteCartItem btn btn-danger">
-                            Delete
-                        </button>
-
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <div class="mt-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Order Total</h5>
-                <p class="card-text">
-                    Total: $@Model.Sum(item => item.Book.Price*item.Quantity)
-                </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Order Summary</h5>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Subtotal:</span>
+                            <span>$@Model.Sum(item => item.Price)</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-3">
+                            <strong>Total:</strong>
+                            <strong>$@Model.Sum(item => item.Price)</strong>
+                        </div>
+                        <a asp-action="ConfirmOrder" asp-controller="Orders" class="btn btn-primary w-100">Proceed to Checkout</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="mt-4">
-        <a asp-action="ConfirmOrder" asp-controller="Orders" class="btn btn-danger">Submit Order</a>
-    </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <h2 class="mb-4">Your cart is empty</h2>
+            <p>Looks like you haven't added any items to your cart yet.</p>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Continue Shopping</a>
+        </div>
+    }
+</div>
 
-    <script>
-        $(document).ready(function () {
-            $('.dropdown-toggle').click(function () {
-                // Toggle the visibility of the slide content
-                $(this).next('.slide-content').slideToggle();
-            });
-
-            // Handle change event for dropdowns with the 'form-control' class
-            $('.dropdown').change(function (e) {
-                var Quantity = $(this).val();
-                var bookId = $(this).parent().parent().siblings('input').val();
-                $.ajax({
-                    url: '@Url.Action("UpdateCart", "Cart")',
-                    type: 'POST',
-                    data: { bookId: bookId, Quantity: Quantity },
-                    success: function (result) {
-                        $('#Cart').html(result);
-                    },
-                    error: function () {
-                        alert("An error occurred.");
-                    }
-
-                });
-
-            });
-            $('.DeleteCartItem').click(function () {
-
-                var bookId = $(this).parent().siblings("#target").children("input").val();
-                $.ajax({
-                    url: '@Url.Action("DeleteCartItem", "Cart")',
-                    type: 'POST',
-                    data: { id: bookId },
-                    success: function (result) {
-                        $('#Cart').html(result);
-                    },
-                    error: function () {
-                        alert("An error occurred.");
-                    }
-
-                });
-
-            });
-            /*$('.dropdown').change(function (e) {
-                var dropdownId = $(this).attr('id'); // Get ID of changed dropdown
-                var formId = dropdownId.replace('dropdown', 'form'); // Assuming forms have IDs like 'form123'
-                $('#' + formId).submit(); // Submit only the relevant form
-            });*/
-            function ClearResult() {
-                $("#Cart").empty();
-            }
+<script>
+    $(document).ready(function () {
+        $('.quantity-select').change(function (e) {
+            var quantity = $(this).val();
+            var bookId = $(this).data('book-id');
+            updateCart(bookId, quantity);
         });
 
-    </script>
-}
-else
-{
-    <h1>Cart is empty</h1>
-}
+        $('.delete-cart-item').click(function () {
+            var bookId = $(this).data('book-id');
+            deleteCartItem(bookId);
+        });
 
+        function updateCart(bookId, quantity) {
+            $.ajax({
+                url: '@Url.Action("UpdateCart", "Cart")',
+                type: 'POST',
+                data: { bookId: bookId, Quantity: quantity },
+                success: function (result) {
+                    $('#Cart').html(result);
+                },
+                error: function () {
+                    toastr.error("An error occurred while updating the cart.");
+                }
+            });
+        }
+
+        function deleteCartItem(bookId) {
+            $.ajax({
+                url: '@Url.Action("DeleteCartItem", "Cart")',
+                type: 'POST',
+                data: { id: bookId },
+                success: function (result) {
+                    $('#Cart').html(result);
+                },
+                error: function () {
+                    toastr.error("An error occurred while removing the item from the cart.");
+                }
+            });
+        }
+    });
+</script>

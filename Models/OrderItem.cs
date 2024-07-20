@@ -6,11 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AprilBookStore.Models
 {
-    public class OrderItem
+    public class OrderItem:Entity
     {
-        [Key]
-
-        public int Id { get; set; }
         public int Quantity { get; set; }
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }

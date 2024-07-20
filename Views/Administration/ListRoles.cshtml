@@ -27,7 +27,7 @@
                     {
                         <a asp-action="EditRole" asp-route-id="@role.Id" class="btn btn-primary">Edit</a>
                     }
-                    @if ((await authorize.AuthorizeAsync(User, "DeleteRolePolicy")).Succeeded) 
+                    @if ((await authorize.AuthorizeAsync(User, "DeleteRolePolicy")).Succeeded)
                     { 
                         <button type="submit" onclick="return confirm('are you sure to delete @role.Name ?')" class="btn btn-danger">
                             Delete

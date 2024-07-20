@@ -1,123 +1,73 @@
 ﻿@model IPagedList<Book>
 
-
-<div class="container-lg ">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 m-auto">
+<div class="container-xxl py-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
         @foreach (var item in Model)
         {
-            <div class="col mb-2">
-                <div class="card h-100 position-relative m-2" style="outline:solid;outline-color:black">
-                    <a asp-action="Details" asp-controller="Book" asp-route-id="@item.Id">
-                        <div class="image-container">
-                            <img asp-append-version="true" src="@item.ImgPath" width="100%" height="350px" />
-                        </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 hover-shadow">
+                    <a asp-action="Details" asp-controller="Books" asp-route-id="@item.Id" class="text-decoration-none">
+                        <img asp-append-version="true" src="@item.ImgPath" class="card-img-top" style="height: 400px;" alt="@item.Name" />
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <text class="text-center fw-medium mb-auto">@item.Name</text>
-                        <text class="fw-light text-center  mb-auto">@item.Author.Name</text>
-                        <p class="card-text align-items-end text-center">
-                            @for (int i = 0; i < (int)item.BookStar; i++)
+                        <h5 class="card-title text-truncate mb-1" title="@item.Name">
+                            @(item.Name.Length > 32 ? $"{item.Name.Substring(0, 32)}..." : item.Name)
+                        </h5>
+                        <p class="card-text text-muted small mb-2">@item.Author.Name</p>
+                        <div class="mb-2">
+                            @for (int i = 1; i <= 5; i++)
                             {
-                                <img src="~/Assets/star.svg"></img>
+                                <i class="bi @(i <= (int)item.BookStar ? "bi-star-fill text-warning" : "bi-star")"></i>
                             }
-
-                            @for (int i = (int)item.BookStar; i < 5; i++)
-                            {
-                                <img src="~/Assets/star-fill.svg"></img>
-                            }
-
-                        </p>@*stars*@
-                        <div class=" p-2 d-flex justify-content-between align-items-center rounded ps-4 w-100" style="background-color:aquamarine">
-                            <text class="fw-bolder">
-                                $@string.Format("{0:n2}", item.Price)
-                            </text>
-
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5 text-primary">$@string.Format("{0:n2}", item.Price)</span>
                             @if (User.Identity.IsAuthenticated)
                             {
-                                @* @Html.Hidden("Id-"+item.Id, item.Id)
-                                <button type="button" class="btn btn-teal btn-sm rounded" style="background-color:aqua" title="Add to cart" id="addToCartBtn-@item.Id">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="inline-block" style="width: 20px; height: 20px;">
-                                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                    </svg>
-                                </button>
-                                *@
-                                @if(item.QuantityInStock <= 0)
+                                @if (item.QuantityInStock <= 0)
                                 {
-                                    <button type="button" class="btn btn-danger btn-sm rounded disabled">
+                                    <button type="button" class="btn btn-outline-danger btn-sm" disabled>
                                         Out of stock
                                     </button>
                                 }
                                 else
                                 {
-                                    @Html.Hidden("Id", item.Id)
-
-                                    <button type="button" class="btn btn-teal btn-sm rounded addToCartBtn" style="background-color:aqua" title="Add to cart">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="inline-block" style="width: 20px; height: 20px;">
-                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                        </svg>
+                                    <input type="hidden" name="Id" value="@item.Id" />
+                                    <button type="button" class="btn btn-primary btn-sm addToCartBtn" title="Add to cart">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
                                     </button>
                                 }
-
-
-                        }
+                            }
                             else
                             {
-                                using (Html.BeginForm("Login", "Account"))
-                                {
-                                    <button type="submit" class="btn btn-teal btn-sm rounded " style="background-color:aqua" title="Add to cart">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="inline-block" style="width: 20px; height: 20px;">
-                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                        </svg>
-                                    </button>
-                                }
-
+                                <a asp-area="Identity" asp-page="/account/login" class="btn btn-outline-primary btn-sm" title="Add to cart">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </a>
                             }
-
                         </div>
                     </div>
                 </div>
             </div>
-           @*  <script>
-                $(document).ready(function () {
-                    $('#addToCartBtn-@item.Id').click(function () {
-                        var itemId = $('#Id-@item.Id').val();
-
-                        $.ajax({
-                            url: '@Url.Action("AddToCart", "Cart")',
-                            type: 'POST',
-                            data: { bookId: itemId },
-                            success:function (result) {
-                                $('#cartItemCount').html(result);
-                            },
-                            error: function () {
-                                alert("An error occurred.");
-                            }
-
-                        });
-                    });
-                });
-            </script> *@
         }
     </div>
 </div>
+
 <script>
     $(document).ready(function () {
         $('.addToCartBtn').click(function () {
-            var itemId = $(this).siblings('input').val();
+            var itemId = $(this).siblings('input[name="Id"]').val();
             $.ajax({
                 url: '@Url.Action("AddToCart", "Cart")',
                 type: 'POST',
                 data: { bookId: itemId },
                 success: function (result) {
                     $('#cartItemCount').html(result);
+                    toastr.success('Item added to cart successfully!');
                 },
                 error: function () {
-                    alert("An error occurred.");
+                    toastr.error('An error occurred while adding the item to the cart.');
                 }
             });
         });
     });
 </script>
-
-
-

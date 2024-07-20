@@ -1,6 +1,6 @@
 ﻿using AprilBookStore.Models;
 using AprilBookStore.Security;
-using AprilBookStore.ViewModels;
+using AprilBookStore.ViewModels.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
@@ -11,14 +11,13 @@ using System.Security.Claims;
 
 namespace AprilBookStore.Controllers;
 
-/*[Authorize(Roles = "SuperAdmin,Admin")]*/
+[Authorize(Roles = "SuperAdmin,Admin")]
 public class AdministrationController : Controller
 {
     private readonly RoleManager<IdentityRole> roleManager;
     private readonly UserManager<ApplicationUser> userManager;
     private readonly ILogger<AdministrationController> logger;
     private readonly IDataProtector dataProtector;
-
     public AdministrationController(RoleManager<IdentityRole> roleManager,
         UserManager<ApplicationUser> userManager, ILogger<AdministrationController> logger,
         IDataProtectionProvider dataProtectionProvider)
@@ -83,7 +82,7 @@ public class AdministrationController : Controller
             return View(model);
         }
         catch (Exception ex)
-        { 
+        {
             Console.WriteLine(ex.ToString());
             ViewBag.ErrorMessage = "An error occurred. Please contact support.";
             return View("Error");
@@ -91,7 +90,7 @@ public class AdministrationController : Controller
 
     }
     [HttpPost]
-    
+
     public async Task<IActionResult> EditRole(EditRoleViewModel model)
     {
         // ... your existing code ...
@@ -317,13 +316,13 @@ public class AdministrationController : Controller
         }
 
     }
-    [Authorize(Policy = "EditUserRolePolicy")]
+    [Authorize(Policy = "EditRolePolicy")]
     public async Task<IActionResult> EditUserRoles(string id)
     {
         try
         {
             ViewBag.userId = id;
-            
+
 
             var user = userManager.FindByIdAsync(id).Result;
 
@@ -355,7 +354,7 @@ public class AdministrationController : Controller
     }
 
     [HttpPost]
-    [Authorize(Policy = "EditUserRolePolicy")]
+    [Authorize(Policy = "EditRolePolicy")]
     public async Task<IActionResult> EditUserRoles(List<UserRolesViewModel> models, string id)
     {
         var user = userManager.FindByIdAsync(id).Result;
@@ -447,7 +446,3 @@ public class AdministrationController : Controller
         return RedirectToAction("EditUser", new { id });
     }
 }
-
-
-
-

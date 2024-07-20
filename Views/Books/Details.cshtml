@@ -1,94 +1,60 @@
-﻿@* @model Store.Models.Book
-@using Store.CustomHtmlHelpers;
+﻿@model AprilBookStore.Models.Book
 @{
-    ViewBag.Title = "Details";
+    ViewData["Title"] = "Book Details";
 }
 
-
-<h2>Details</h2>
-
-<div class="container">
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Book Details</h1>
     <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <div class="card">
+        <div class="col-md-6 mb-4">
+            <img asp-append-version="true" src="@Model.ImgPath" class="img-fluid rounded shadow" alt="@Model.Name" />
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow">
                 <div class="card-body">
-                    <h4 class="card-title">Book Details</h4>
-                    <hr />
+                    <h2 class="card-title text-center mb-4">@Model.Name</h2>
                     <dl class="row">
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.Name)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.Name)
-                        </dd>
+                        <dt class="col-sm-4">Format:</dt>
+                        <dd class="col-sm-8">@Model.Format</dd>
 
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.Format)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.Format)
-                        </dd>
-
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.BookStar)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @for (int i = 0; i < (int)Model.BookStar; i++)
+                        <dt class="col-sm-4">Rating:</dt>
+                        <dd class="col-sm-8">
+                            @for (int i = 1; i <= 5; i++)
                             {
-                                <span class="fa fa-star checked"></span>
-                            }
-
-                            @for (int i = (int)Model.BookStar; i < 5; i++)
-                            {
-                                <span class="fa fa-star"></span>
+                                <i class="bi @(i <= (int)Model.BookStar ? "bi-star-fill text-warning" : "bi-star")"></i>
                             }
                         </dd>
 
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.ISBN)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.ISBN)
-                        </dd>
+                        <dt class="col-sm-4">ISBN:</dt>
+                        <dd class="col-sm-8">@Model.ISBN</dd>
 
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.Price)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.Price)
-                        </dd>
+                        <dt class="col-sm-4">Price:</dt>
+                        <dd class="col-sm-8">@Model.Price.ToString("C")</dd>
 
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.img_path)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @*<img src="@Model.img_path" alt="Book Cover" class="img-fluid" />
-                            @Html.Image(Model.img_path, "Book Cover", new { @class = "img-fluid" })
+                        <dt class="col-sm-4">Author:</dt>
+                        <dd class="col-sm-8">@Model.Author.Name</dd>
 
-                        </dd>
+                        <dt class="col-sm-4">Category:</dt>
+                        <dd class="col-sm-8">@Model.Category.Name</dd>
 
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.Author.Name)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.Author.Name)
-                        </dd>
-
-                        <dt class="col-sm-3">
-                            @Html.DisplayNameFor(model => model.Category.Name)
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.Category.Name)
+                        <dt class="col-sm-4">Description:</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.Description))
+                            {
+                                <p>@Model.Description</p>
+                            }
+                            else
+                            {
+                                <p>No description available.</p>
+                            }
                         </dd>
                     </dl>
                 </div>
             </div>
         </div>
     </div>
+    <div class="d-flex justify-content-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary me-2">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
 </div>
-
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" }) |
-    @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-secondary" })
-</p>
- *@

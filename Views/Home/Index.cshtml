@@ -1,17 +1,9 @@
-﻿
-@model IPagedList<Book>
-
-
-
+﻿@model IPagedList<Book>
 
 @{
     ViewBag.Title = "Books";
 }
-<script type="text/javascript" language="javascript">
-    function ClearResults() {
-        $("#CartItemCount").empty()
-    }
-</script>
+
 
 @await Html.PartialAsync("_Book", Model)
 
@@ -24,3 +16,8 @@
 
     })
 </div>
+<script type="text/javascript" language="javascript">
+    function ClearResults() {
+        $("#CartItemCount").empty()
+    }
+</script>

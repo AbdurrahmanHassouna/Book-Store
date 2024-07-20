@@ -6,10 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AprilBookStore.Models
 {
-    public class CartItem
+    public class CartItem :Entity
     {
-        [Key]
-        public int Id { get; set; }
         public int Quantity { get; set; }
         public string UserId { get; set; }
         public int BookId { get; set; }

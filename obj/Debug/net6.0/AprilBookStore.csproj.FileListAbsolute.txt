@@ -575,3 +575,4 @@ D:\GitHub\Book-Store\obj\Debug\net6.0\refint\AprilBookStore.dll
 D:\GitHub\Book-Store\obj\Debug\net6.0\AprilBookStore.pdb
 D:\GitHub\Book-Store\obj\Debug\net6.0\AprilBookStore.genruntimeconfig.cache
 D:\GitHub\Book-Store\obj\Debug\net6.0\ref\AprilBookStore.dll
+D:\GitHub\Book-Store\bin\Debug\net6.0\libman.json

@@ -26,19 +26,17 @@ namespace AprilBookStore
             builder.Services.AddDbContext<BookStoreContext>(options =>
                 options.UseSqlServer(connectionString)
                 .EnableSensitiveDataLogging());
-
+            
             builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options => {
                 options.SignIn.RequireConfirmedAccount = true;
                 options.Password.RequireNonAlphanumeric=false;
                 options.User.RequireUniqueEmail = true;
-            }).AddDefaultUI()
-                .AddEntityFrameworkStores<BookStoreContext>()
-                .AddDefaultTokenProviders();
-            
+            }).AddDefaultTokenProviders().AddDefaultUI().AddEntityFrameworkStores<BookStoreContext>();
 
             builder.Services.AddTransient<IData, DataContext>();
             builder.Services.AddTransient<IAuthorizationHandler, CanEditOnlyOthersRolesHandler>();
             builder.Services.AddTransient<IAuthorizationHandler, SuperAdminHandler>();
+
             var ClientId = builder.Configuration["ClientId"];
             var ClientSecret = builder.Configuration["ClientSecret"];
             builder.Services.AddAuthentication()
@@ -49,7 +47,7 @@ namespace AprilBookStore
                 });
             builder.Services.AddAuthorization(options=> {
                 options.AddPolicy("DeleteRolePolicy", p => p.RequireRole("SuperAdmin"));
-                options.AddPolicy("EditUserRolePolicy", p => p.AddRequirements(new RoleEditingRequirement()));
+                options.AddPolicy("EditRolePolicy", p => p.AddRequirements(new RoleEditingRequirement()));
             });
             var app = builder.Build();
 

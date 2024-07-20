@@ -29,16 +29,16 @@ namespace AprilBookStore.DataAccess
         }
         public ICollection<Book> GetBooks()
         {
-
-            return bookStoreContext.Books.Include(a => a.Author).Include(a => a.Category).ToList();
+            var books = bookStoreContext.Books.Include(a => a.Author).Include(a => a.Category).ToList();
+            return books;
         }
         public ICollection<Book> GetBooks(Category category)
         {
             return GetBooks().Where(b => b.Category == category).ToList();
         }
         public Book? GetBook(int id) {
-            
-            return GetBooks().Where(c=>c.Id==id).FirstOrDefault();
+            var book = GetBooks().Where(c=>c.Id==id).FirstOrDefault();
+            return book;
         }
         public async Task<ICollection<Book>> SearchBook(string search)
         {
@@ -46,13 +46,17 @@ namespace AprilBookStore.DataAccess
             {
                 return new List<Book>();
             }
-            var searchTerm = search.Trim(); 
 
-            return await bookStoreContext.Books
+            var searchTerm = search.Trim();
+
+            var result = await bookStoreContext.Books
                 .Include(a => a.Author)
                 .Include(a => a.Category)
-                .Where(b => EF.Functions.Like(b.Name, $"%{searchTerm}%")) 
+                .Where(b => EF.Functions.Like(b.Name, $"%{searchTerm}%"))
+                .OrderBy(b => !EF.Functions.Like(b.Name, $"{searchTerm}%"))
                 .ToListAsync();
+
+            return result;
         }
 
         public async Task<int> GetCartItemsCountAsync(ClaimsPrincipal claims)
@@ -116,9 +120,9 @@ namespace AprilBookStore.DataAccess
             var Orders = bookStoreContext.Orders.Where(o => o.UserId==claims.FindFirstValue(ClaimTypes.NameIdentifier)).ToList();
             return Orders;
         }
-        public async Task<Order> GetOrderDetails(int orderId)
+        public async Task<Order> GetOrderDetails(int Id)
         {
-            Order order = await bookStoreContext.Orders.Where(o=>o.OrderID==orderId).Include(o=>o.OrderItems).FirstOrDefaultAsync();
+            Order order = await bookStoreContext.Orders.Where(o=>o.Id==Id).Include(o=>o.OrderItems).FirstOrDefaultAsync();
             return order;
         }
         public async Task<Order>? SubmitOrder(string UserId)
@@ -169,9 +173,47 @@ namespace AprilBookStore.DataAccess
         {
             return bookStoreContext.Categories.Where(a => a.Id==id).FirstOrDefault();
         }
+        public void AddCategory(Category category)
+        {
+            bookStoreContext.Categories.Add(category);
+            bookStoreContext.SaveChanges();
+        }
+        public void UpdateCategory(Category category)
+        {
+            bookStoreContext.Categories.Update(category);
+            bookStoreContext.SaveChanges();
+        }
+        public void DeleteCategory(int id)
+        {
+            var category = bookStoreContext.Categories.Find(id);
+            if (category != null)
+            {
+                bookStoreContext.Categories.Remove(category);
+                bookStoreContext.SaveChanges();
+            }
+        }
         public void AddBook(Book book) {
             bookStoreContext.Books.Add(book);
             bookStoreContext.SaveChangesAsync().Wait();
+        }
+        public void UpdateBook(Book book)
+        {
+            bookStoreContext.Books.Update(book);
+            bookStoreContext.SaveChanges();
+        }
+        public void DeleteBook(int id)
+        {
+            var book = bookStoreContext.Books.Find(id);
+            if (book != null)
+            {
+                bookStoreContext.Books.Remove(book);
+                bookStoreContext.SaveChanges();
+            }
+        }
+
+        public void Dispose()
+        {
+            bookStoreContext.Dispose();
         }
     }
 }
